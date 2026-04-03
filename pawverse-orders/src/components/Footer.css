@@ -1,0 +1,161 @@
+.footer {
+  background-color: #f8f8f8;
+  border-top: 3px solid #8B5CF6;
+  padding: 30px 60px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 0 0 280px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.footer-description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: #8B5CF6;
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+  flex: 1;
+  justify-content: center;
+}
+
+.footer-column {
+  min-width: 100px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #8B5CF6;
+}
+
+.footer-contact {
+  flex: 0 0 250px;
+}
+
+.footer-contact h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 30px 30px;
+  }
+  
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-left,
+  .footer-contact {
+    flex: 0 0 100%;
+  }
+  
+  .footer-links {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 20px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
