@@ -6,12 +6,10 @@ const Sidebar = () => {
   
   const menuItems = [
     { path: '/dashboard', label: 'Dashboard', icon: '📊' },
-    { path: '/products', label: 'Quản lí sản phẩm', icon: '📦' },
-    { path: '/orders', label: 'Quản lí đơn hàng', icon: '🛒' },
-    { path: '/services', label: 'Quản lí đặt dịch vụ', icon: '🔧' },
-    { path: '/categories', label: 'Quản lí danh mục', icon: '📂' },
-    { path: '/brands', label: 'Quản lí thương hiệu', icon: '🏷️' },
-    { path: '/vouchers', label: 'Quản lí voucher', icon: '🎫' }
+    { path: '/products', label: 'Sản phẩm', icon: '📦' },
+    { path: '/orders', label: 'Đơn hàng', icon: '�' },
+    { path: '/staff', label: 'Nhân viên', icon: '�' },
+    { path: '/settings', label: 'Cài đặt', icon: '⚙️' }
   ]
 
   const accountItems = [
@@ -22,50 +20,33 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2 className="sidebar-title">PAWVERSE STAFF GATE</h2>
+        <div className="logo">
+          <span className="logo-icon">🐾</span>
+          <span className="logo-text">PawVerse</span>
+        </div>
       </div>
       
-      <div className="sidebar-section">
-        <h3 className="section-title">Vận hành hệ thống</h3>
-        <nav className="sidebar-nav">
-          {menuItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
-            >
-              <span className="nav-icon">{item.icon}</span>
-              <span className="nav-label">{item.label}</span>
-            </Link>
+      <nav className="sidebar-nav">
+        <ul className="nav-list">
+          {menuItems.map(item => (
+            <li key={item.id} className="nav-item">
+              <Link 
+                to={item.path}
+                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+              >
+                <span className="nav-icon">{item.icon}</span>
+                <span className="nav-label">{item.label}</span>
+              </Link>
+            </li>
           ))}
-        </nav>
-      </div>
-
-      <div className="sidebar-section">
-        <h3 className="section-title">Quản lý tài khoản</h3>
-        <nav className="sidebar-nav">
-          {accountItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
-            >
-              <span className="nav-icon">{item.icon}</span>
-              <span className="nav-label">{item.label}</span>
-            </Link>
-          ))}
-        </nav>
-      </div>
+        </ul>
+      </nav>
 
       <div className="sidebar-footer">
-        <div className="user-info">
-          <div className="user-avatar">👤</div>
-          <span className="user-name">Nguyễn Văn Staff</span>
-        </div>
-        <div className="sidebar-actions">
-          <button className="action-btn home-btn">🏠 HOME</button>
-          <button className="action-btn exit-btn">🚪 EXIT</button>
-        </div>
+        <button className="add-new-btn">
+          <span className="btn-icon">➕</span>
+          <span className="btn-text">Thêm mới</span>
+        </button>
       </div>
     </div>
   )
