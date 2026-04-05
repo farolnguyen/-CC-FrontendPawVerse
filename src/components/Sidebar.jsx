@@ -5,16 +5,11 @@ const Sidebar = () => {
   const location = useLocation()
   
   const menuItems = [
-    { path: '/dashboard', label: 'Dashboard', icon: '📊' },
-    { path: '/products', label: 'Sản phẩm', icon: '📦' },
-    { path: '/orders', label: 'Đơn hàng', icon: '�' },
-    { path: '/staff', label: 'Nhân viên', icon: '�' },
-    { path: '/settings', label: 'Cài đặt', icon: '⚙️' }
-  ]
-
-  const accountItems = [
-    { path: '/accounts', label: 'Quản lý tài khoản', icon: '👥' },
-    { path: '/history', label: 'Lịch sử hoạt động', icon: '📜' }
+    { id: 'dashboard', label: 'Dashboard', icon: '📊', path: '/dashboard' },
+    { id: 'products', label: 'Sản phẩm', icon: '📦', path: '/products' },
+    { id: 'orders', label: 'Đơn hàng', icon: '📋', path: '/orders' },
+    { id: 'staff', label: 'Nhân viên', icon: '👥', path: '/staff' },
+    { id: 'settings', label: 'Cài đặt', icon: '⚙️', path: '/settings' }
   ]
 
   return (
