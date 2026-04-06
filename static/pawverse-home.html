@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawVerse - Cửa hàng thú cưng</title>
+    <link rel="stylesheet" href="pawverse-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="public/Images/headerandfooter/Logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="public/Images/headerandfooter/Logo.png" alt="PawVerse" class="logo-img">
+                    <h1>PawVerse</h1>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="active">Trang chủ</a></li>
+                        <li><a href="#products">Sản phẩm</a></li>
+                        <li><a href="#services">Dịch vụ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    
+                    <div class="cart-icon">
+                        <span>🛒</span>
+                        <span class="cart-count">0</span>
+                    </div>
+                    
+                    <div class="user-icon">
+                        <span>👤</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('public/Images/bgcute.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Background Decorative Layer -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+            <!-- Animated Blur Blobs -->
+            <div class="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-primary-200/50 rounded-full blur-[120px] mix-blend-multiply opacity-60 animate-pulse"></div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-blue-100/40 rounded-full blur-[100px] mix-blend-multiply opacity-50"></div>
+            <div class="absolute top-[20%] left-[20%] w-[30vw] h-[30vw] bg-orange-100/30 rounded-full blur-[120px] mix-blend-multiply opacity-40"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        Chào mừng tới PawVerse 🐾
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">A pet store</span>
+                        <span class="title-line">with everything</span>
+                        <span class="title-line highlight">YOU NEED</span>
+                    </h1>
+                    <p class="hero-description">
+                        Nâng niu từng bước chân, nâng niu từng nhịp thở của thú yêu trong ngôi nhà của chúng ta. 🐾
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">
+                            MUA NGAY
+                            <span class="btn-icon">🛒</span>
+                        </button>
+                        <button class="btn-secondary">
+                            DỊCH VỤ
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-glow"></div>
+                    <img src="public/Images/bigdog.png" alt="Pet Dog" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Khám phá</span>
+                <h2 class="section-title">DANH MỤC SẢN PHẨM</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="category-carousel">
+                <button class="carousel-btn prev-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <div class="category-track">
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/ThucAnHat.png" alt="Thức ăn hạt">
+                        </div>
+                        <h3>Thức ăn hạt</h3>
+                        <p>245 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/Pate.png" alt="Pate">
+                        </div>
+                        <h3>Pate</h3>
+                        <p>189 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/PhuKien.png" alt="Phụ kiện">
+                        </div>
+                        <h3>Phụ kiện</h3>
+                        <p>156 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/DoChoi.png" alt="Đồ chơi">
+                        </div>
+                        <h3>Đồ chơi</h3>
+                        <p>98 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/VeSinh.png" alt="Vệ sinh">
+                        </div>
+                        <h3>Vệ sinh</h3>
+                        <p>124 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/DungCu.png" alt="Dụng cụ">
+                        </div>
+                        <h3>Dụng cụ</h3>
+                        <p>87 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/BanhThuong.png" alt="Bánh thưởng">
+                        </div>
+                        <h3>Bánh thưởng</h3>
+                        <p>76 sản phẩm</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="public/Images/categories/ThucPhamChucNang.png" alt="Thực phẩm chức năng">
+                        </div>
+                        <h3>Thực phẩm chức năng</h3>
+                        <p>45 sản phẩm</p>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Category Dots -->
+            <div class="category-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sản phẩm nổi bật</h2>
+                <a href="#" class="view-all">Xem tất cả →</a>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/Images/product/best/pate.png" alt="Pate cho chó">
+                        <button class="favorite-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Pate cao cấp cho chó</h4>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="price">₫95,000</p>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/Images/product/best/vongco.png" alt="Vòng cổ">
+                        <button class="favorite-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Vòng cổ tim đỏ</h4>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="price">₫125,000</p>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/Images/product/best/batancham.png" alt="Bát ăn tự động">
+                        <button class="favorite-btn">❤️</button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Bát ăn tự động</h4>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="price">₫350,000</p>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="public/Images/product/best/nemdabao.png" alt="Nệm da báo">
+                        <button class="favorite-btn">🤍</button>
+                    </div>
+                    <div class="product-info">
+                        <h4>Nệm da báo cao cấp</h4>
+                        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                        <p class="price">₫450,000</p>
+                        <button class="add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Tabs Section -->
+    <section class="products-tabs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Bộ Sưu Tập Nổi Bật</span>
+                <h2 class="section-title">Sản Phẩm <br> Cho Thú Cưng</h2>
+                
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="best">Bán Chạy Nhất</button>
+                    <button class="tab-btn" data-tab="latest">Hàng Mới Về</button>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="best">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/thucanhat/catsrang_2kg.png" alt="Thức ăn mèo">
+                                <button class="favorite-btn">🤍</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Thức ăn mèo Cat's Ring 2kg</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫280,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/dochoi/ca_lon.png" alt="Đồ chơi cá">
+                                <button class="favorite-btn">❤️</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Đồ chơi cá nhồi bông</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫85,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/vesinh/cat_cature_6l.png" alt="Cát vệ sinh">
+                                <button class="favorite-btn">🤍</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Cát vệ sinh Cature 6L</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫120,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/phukien/ro_mom_hong.png" alt="Rổ móm">
+                                <button class="favorite-btn">🤍</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Rổ móm hồng đáng yêu</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫95,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="latest">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/pate/pate_whiskas_400g.png" alt="Pate Whiskas">
+                                <button class="favorite-btn">🤍</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Pate Whiskas 400g</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫65,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/thucphamchucnang/nexgard_spectra.png" alt="Nexgard Spectra">
+                                <button class="favorite-btn">🤍</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Nexgard Spectra</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫450,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/dungcu/may_loc_nuoc.png" alt="Máy lọc nước">
+                                <button class="favorite-btn">❤️</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Máy lọc nước tự động</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫680,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="public/Images/product/banhthuong/bowwow_120g.png" alt="Bánh Bowwow">
+                                <button class="favorite-btn">🤍</button>
+                            </div>
+                            <div class="product-info">
+                                <h4>Bánh thưởng Bowwow 120g</h4>
+                                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                                <p class="price">₫35,000</p>
+                                <button class="add-to-cart">Thêm vào giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-container">
+                <button class="btn-primary">XEM TẤT CẢ SẢN PHẨM →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Đăng ký nhận <br /> tin tức ngay!</h2>
+                    <p>Đừng bỏ lỡ các ưu đãi hấp dẫn và kiến thức chăm sóc thú cưng bổ ích nhất. ✨</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Nhập email của bạn..." required>
+                        <button type="submit" class="newsletter-btn">Gửi ngay</button>
+                    </form>
+                </div>
+                <div class="newsletter-image">
+                    <img src="public/Images/service/dog2.png" alt="Happy Dog">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="testimonial-badge">ĐÁNH GIÁ</span>
+                <h2 class="section-title">NHỮNG NGƯỜI IU THÚ CƯNG <br /> NÓI GÌ VỀ SỐP</h2>
+            </div>
+
+            <div class="testimonial-content">
+                <div class="testimonial-image">
+                    <div class="testimonial-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                    </div>
+                    <img src="public/Images/customer/ImgJackTo.png" alt="Customer">
+                </div>
+
+                <div class="testimonial-text">
+                    <blockquote>
+                        "Dịch vụ spa và nhuộm lông cho bé Đom Đóm nhà mình quá tuyệt, bé được chăm sóc kỹ lưỡng mà tiệm thì đáng iu, thân thiện quá trời!"
+                    </blockquote>
+                    
+                    <div class="testimonial-author">
+                        <img src="public/Images/customer/ImgJackNho.png" alt="Author">
+                        <div class="author-info">
+                            <h4>Trịnh Trần Phương Tuấn</h4>
+                            <p>Công nhân</p>
+                        </div>
+                        
+                        <div class="testimonial-nav">
+                            <button class="nav-btn prev">←</button>
+                            <button class="nav-btn next">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news">
+        <div class="container">
+            <div class="news-header">
+                <h2 class="section-title">Tin tức nổi bật</h2>
+                <a href="#" class="view-all">Xem thêm tin tức →</a>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <span class="news-tag">NEWS</span>
+                        <img src="public/Images/news/img-1.png" alt="News 1">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span>Admin</span>
+                            <span>•</span>
+                            <span>20 Th03, 2026</span>
+                        </div>
+                        <h3>Làm sao để chăm sóc mèo con mới về nhà lần đầu?</h3>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <span class="news-tag">TIPS</span>
+                        <img src="public/Images/news/img-2.png" alt="News 2">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span>PawVerse Team</span>
+                            <span>•</span>
+                            <span>18 Th03, 2026</span>
+                        </div>
+                        <h3>Chế độ dinh dưỡng cân bằng cho chó năng động</h3>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <span class="news-tag">EVENTS</span>
+                        <img src="public/Images/news/img-3.png" alt="News 3">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span>Admin</span>
+                            <span>•</span>
+                            <span>15 Th02, 2026</span>
+                        </div>
+                        <h3>Sự kiện: Ngày hội Offline cộng đồng thú cưng PawVerse</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="public/Images/headerandfooter/Logo.png" alt="PawVerse">
+                        <h2>PawVerse</h2>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                        <a href="#">📺 YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Về PawVerse</h3>
+                    <p>PawVerse là cửa hàng thú cưng uy tín với hơn 10 năm kinh nghiệm. Chúng tôi cam kết mang đến những sản phẩm và dịch vụ tốt nhất cho các boss của bạn.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p>📍 123 Nguyễn Huệ, Q.1, TP.HCM</p>
+                    <p>📞 090 123 4567</p>
+                    <p>✉️ info@pawverse.vn</p>
+                    <p>🕐 Thứ 2 - Chủ nhật: 8:00 - 22:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PawVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pawverse-script.js"></script>
+</body>
+</html>
